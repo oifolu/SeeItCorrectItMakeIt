@@ -54,17 +54,30 @@ justify-content: space-around;
   justify-content: center;
   margin-right: 1%;
   margin-bottom: 4%;
+  margin-top: 4%;
 }
 .flex-item-social:hover {
   background: #382079;
+}
+
+.flex-item-social p {
+  font-family: lato;
+  text-align: center;
+}
+
+.flex-item-social a {
+  font-family: lato;
+  color: white;
+
 }
 
 .flex-item-social img{
   max-width: 95%;
   max-height: 95%;
   display: block;
+  margin-right: 2%;
+  margin-left: 2%;
 }
-
 
 
 .navigation {
@@ -185,11 +198,18 @@ justify-content: space-around;
 
 }
 
+.aside-1 a {
+  color: white;
+}
+
 .aside-2 {
   background: #1C6138;
   font-family: lato;
   color: white;
+}
 
+.aside-2 a {
+  color: white;
 }
 
 @media all and (min-width: 600px) {
@@ -213,12 +233,23 @@ p {
 }
 
 h1 {
-  font-family: arial;
+  font-family: lato;
   text-align: center;
+}
 
+h3 {
+  font-family: lato;
+  text-align: center;
 }
 
 img {
     max-width: 60%;
     max-height: 60%;
+}
+
+#map {
+  height: 95%;
+  /* The height is 400 pixels */
+  width: 95%;
+  /* The width is the width of the web page */
 }

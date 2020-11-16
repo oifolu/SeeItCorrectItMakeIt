@@ -3,7 +3,24 @@
 <link rel="stylesheet" href="css/style.css">
   <head>
     <meta charset="utf-8">
-    <title>University of Advancing Technology - Student Login</title>
+    <title>University of Advancing Technology - Contact Information</title>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_zEl53syYWsBMXMQx29X7_kGuZvU1N8E&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+    <script>
+      function initMap() {
+        const bislett = { lat: 33.377917, lng: -111.97602 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: bislett,
+        });
+        const marker = new google.maps.Marker({
+          position: bislett,
+          map: map,
+        });
+      }
+    </script>
   </head>
   <body>
     <ul class="navigation">
@@ -13,7 +30,42 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
 
+    <div class="flex-container-social">
 
+        <div class="flex-item-social" style="flex-grow: 8">
+          <div id="map">
+          </div>
+        </div>
+
+
+
+      <div class="flex-item-social">
+
+
+        <p>Phone <br>
+        <a href="tel:602-383-8228">602-383-8228</a></p>
+
+      </div>
+
+      <div class="flex-item-social">
+
+
+        <p>University of Advancing Technology.<br>
+          2625 W. Baseline Road
+        Tempe, AZ</p>
+
+      </div>
+
+      <div class="flex-item-social">
+
+
+        <p>E-Mail <br>
+        <a href="mailto:admissions@uat.edu">admissions@uat.edu</a></p>
+
+      </div>
+
+
+    </div>
 
 
 
